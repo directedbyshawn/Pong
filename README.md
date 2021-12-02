@@ -1,7 +1,5 @@
 # Pong
 
-<br>
-<br>
 <img src="https://srodgers.w3.uvm.edu/cs120/pong-images/pong.png" alt="game snapshot" style="width: 500px;">
 <br>
 
@@ -26,4 +24,4 @@ adjust the score limit, change the variable `maxScore` that is initialized at th
 the score limit is reached, the game will display the winner, and you can press `esc` to exit. You 
 also have the option to toggle sound on and off at any point in the game by pressing `p`.
 
-
+<br>
