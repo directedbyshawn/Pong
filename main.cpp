@@ -42,13 +42,6 @@ Rect player2;
 Ball ball;
 vector<Shape*> gameEntities;
 
-
-/*
- *
- * Game initialization / modification
- *
- */
-
 void initPlayers() {
 
     // two identical paddles on opposite sides of screen
@@ -161,7 +154,7 @@ void checkBallPath() {
     if (ball.getTopY() < vertBounds || ball.getBottomY() > height - vertBounds) {
 
         if (playSound) {
-            PlaySound("../wall.wav", NULL, SND_ASYNC|SND_FILENAME);
+            PlaySound("../sounds/wall.wav", NULL, SND_ASYNC|SND_FILENAME);
         }
 
         // position vector is reflected on the y axis and is somewhat random to keep
@@ -192,7 +185,7 @@ void checkBallPath() {
         if (conditionOne || conditionTwo || conditionThree) {
             // ball has hit the left paddle
             if (playSound) {
-                PlaySound("../paddle.wav", NULL, SND_ASYNC|SND_FILENAME);
+                PlaySound("../sounds/paddle.wav", NULL, SND_ASYNC|SND_FILENAME);
             }
             ball.setVectorX(-1 * ball.getVector().x);
             ball.move(3, 0);
@@ -216,7 +209,7 @@ void checkBallPath() {
         if (conditionOne || conditionTwo || conditionThree) {
             // ball has hit the right paddle
             if (playSound) {
-                PlaySound("../paddle.wav", NULL, SND_ASYNC|SND_FILENAME);
+                PlaySound("../sounds/paddle.wav", NULL, SND_ASYNC|SND_FILENAME);
             }
             ball.setVectorX(-1 * ball.getVector().x);
             ball.move(-3, 0);
@@ -231,21 +224,15 @@ void checkBallPath() {
 
 }
 
-/*
- *
- * Timers
- *
- */
-
 void ballTimer(int dummy) {
     if (screen == PLAY) {
         // set off when ball gets past paddle
         if (goalFlag) {
             goalTimer++;
             // timeout
-            if (goalTimer > 70) {
+            if (goalTimer > 40) {
                 if (playSound) {
-                    PlaySound("../goal.wav", NULL, SND_ASYNC|SND_FILENAME);
+                    PlaySound("../sounds/goal.wav", NULL, SND_ASYNC|SND_FILENAME);
                 }
                 // reset flags and reset paddles & ball to initial positions
                 goalFlag = false;
@@ -275,12 +262,6 @@ void ballTimer(int dummy) {
     glutTimerFunc(30, ballTimer, dummy);
 }
 
-/*
- *
- * GLUT functions
- *
- */
-
 void init() {
 
     //  sets window dimensions and initializes game settings & data
@@ -302,8 +283,6 @@ void initGL() {
 }
 
 void display() {
-
-    // renders all data to window every tick
 
     // OpenGL settings
     glViewport(0, 0, width, height);
