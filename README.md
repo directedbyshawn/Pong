@@ -1,5 +1,8 @@
 # Pong
 
+<img src="https://srodgers.w3.uvm.edu/cs120/pong-images/pong.png" alt="game snapshot" style="width: 500px;">
+<br>
+
 ### Description
 One of our assignments for my advanced programming class was to recreate an old school video game. I saw on Twitter that it was recently the 49th anniversary
 of Atari releasing pong, so I thought it would be cool to recreate it. For those who don't know, pong is a basic digital implementation of ping pong / table tennis. It was the first
@@ -21,4 +24,4 @@ adjust the score limit, change the variable `maxScore` that is initialized at th
 the score limit is reached, the game will display the winner, and you can press `esc` to exit. You 
 also have the option to toggle sound on and off at any point in the game by pressing `p`.
 
-<img src="https://srodgers.w3.uvm.edu/cs120/pong-images/pong.png" alt="game snapshot" style="width: 500px;">
+
