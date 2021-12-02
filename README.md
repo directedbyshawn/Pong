@@ -1,5 +1,7 @@
 # Pong
 
+<img src="https://srodgers.w3.uvm.edu/cs120/pong-images/pong.png" alt="game snapshot" style="width: 600px;">
+
 ### Description
 One of our assignments for my advanced programming class was to recreate an old school video game. I saw on Twitter that it was recently the 49th anniversary
 of Atari releasing pong, so I thought it would be cool to recreate it. For those who don't know, pong is a basic digital implementation of ping pong / table tennis. It was the first
