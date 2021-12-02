@@ -1,6 +1,7 @@
 # Pong
 
 <br>
+<br>
 <img src="https://srodgers.w3.uvm.edu/cs120/pong-images/pong.png" alt="game snapshot" style="width: 500px;">
 <br>
 
