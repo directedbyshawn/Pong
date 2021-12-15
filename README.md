@@ -4,8 +4,8 @@
 
 ### Description
 One of our assignments for my advanced programming class was to recreate an old school video game. I saw on Twitter that it was recently the 49th anniversary
-of Atari releasing pong, so I thought it would be cool to recreate it. For those who don't know, pong is a basic digital implementation of ping pong / table tennis. It was the first
-video game ever released by Atari, and digital ping pong was the first concept ever used for a video game. I wanted this to feel and look as close to the Atari version as possible. I 
+of Atari releasing pong, so I thought it would be cool to recreate it. For those who don't know, pong is a basic digital implementation of ping pong / table tennis. Digital ping pong was the first concept ever used for a video game, and it was the first
+game ever released by Atari. I wanted this to feel and look as close to the Atari version as possible. I 
 used all the same sounds as Atari did and tried to keep the game play as similar as possible with a few small adjustments. Overall I am very happy with this project, and had fun creating 
 it as I have very little experience with game development of any kind.
 
